@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Paid - Value8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @page {
+        size: A4 portrait;
+        margin: 4mm 4mm;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-family: "Lexend", sans-serif;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+        border-spacing: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: auto;
+      }
+
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      height="100%"
+      width="100%"
+      style="padding: 60px; text-transform: uppercase"
+    >
+      <!-- Logo + QR Code -->
+      <tr>
+        <td valign="center" style="padding-bottom: 8px">
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="left">
+                <img
+                  src="./images/value8-logo.png"
+                  alt=""
+                  width="172px"
+                  height="auto"
+                />
+              </td>
+              <td align="right">
+                <img
+                  src="./images/qr-code.png"
+                  alt=""
+                  width="57.923px"
+                  height="57.923px"
+                />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- /End Logo + QR Code -->
+
+      <!-- Header -->
+      <tr>
+        <td>
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="width: 100%; background: #15154f"
+          >
+            <tr>
+              <td
+                style="
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  background: #15154f;
+                "
+              >
+                <p
+                  style="
+                    font-weight: 700;
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                  "
+                >
+                  Value 8
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- /End Header -->
+
+      <!-- Invoice REF -->
+      <tr>
+        <td>
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="margin: 10px 0px"
+          >
+            <tr>
+              <td style="padding: 10px; margin-top: 8px">
+                <p
+                  style="
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                  "
+                >
+                  <span style="font-weight: 700">Invoice Paid</span>
+                  <span style="font-weight: 400; margin-left: 10px"
+                    >Ref:12345678</span
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- /End Invoice REF -->
+
+      <!-- Intro Notice -->
+      <tr>
+        <td>
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="margin-top: 8px"
+          >
+            <tr>
+              <td
+                style="
+                  padding: 8px 0 24px 0;
+                  border-top: 1px solid #000;
+                  border-bottom: 1px solid #000;
+                "
+              >
+                <p
+                  style="
+                    text-transform: uppercase;
+                    font-size: 8px;
+                    letter-spacing: 0.4px;
+                  "
+                >
+                  This permit is applicable to the movement of timber, beams,
+                  Logs, billets, Poles, Posts, fuelwood and Charcoal for
+                  permitted tree species only.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- /End Intro Notice -->
+
+      <!-- Form -->
+      <tr>
+        <!-- TODO: Add font size style here -->
+        <td style="">
+          <table>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="border-bottom: 1px solid #000">
+                    <td
+                      valign="top"
+                      align="left"
+                      width="33%"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold">1. COUNTY</p>
+                      <p style="color: #9a9a9a">NYANDARUA</p>
+                    </td>
+                    <td
+                      valign="top"
+                      align="left"
+                      width="67%"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p>Sub-County/ Ward/ Location/ Forest Station</p>
+                      <p style="color: #9a9a9a">MAU MAU FORESTRY</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="border-bottom: 1px solid #000">
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold">2. Mr./Mrs/Miss/Ms.</p>
+                      <p style="color: #9a9a9a">JOHN DOE</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding: 8px 0 11px 8px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p>
+                        is authorised to transport forest <br />produce
+                        specified below from
+                      </p>
+                      <p style="color: #9a9a9a">MAU MAU FORESTRY</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="34%"
+                      align="left"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p>TO</p>
+                      <p style="color: #9a9a9a">JANE DOE</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td valign="top" style="padding: 8px 0">
+                <p style="font-weight: bold">
+                  3. Types of produce and quantity:
+                </p>
+                <p style="color: #9a9a9a">X Number</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr
+                    style="
+                      border-top: 1px solid #000;
+                      border-bottom: 1px solid #000;
+                    "
+                  >
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        padding-right: 5px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p
+                        style="font-weight: bold; border-bottom: 1px solid #000"
+                      >
+                        Type of Produce
+                      </p>
+                      <p style="color: #9a9a9a">HARD WOOD TREE</p>
+                      <p style="font-weight: 700">-</p>
+                    </td>
+
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding: 8px 5px 11px 8px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="border-bottom: 1px solid #000">species</p>
+                      <p style="color: #9a9a9a">KG</p>
+                      <p style="font-weight: 700">-</p>
+                    </td>
+
+                    <td width="34%">
+                      <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td
+                            align="left"
+                            valign="top"
+                            width="60%"
+                            style="
+                              padding: 8px 5px 11px 8px;
+                              border-right: 1px solid #000;
+                            "
+                          >
+                            <p style="border-bottom: 1px solid #000">
+                              Units of measure
+                            </p>
+                            <p style="color: #9a9a9a">KG</p>
+                            <p style="font-weight: 700">-</p>
+                          </td>
+                          <td
+                            valign="top"
+                            width="40%"
+                            align="left"
+                            style="padding: 8px 0 11px 8px"
+                          >
+                            <p style="border-bottom: 1px solid #000">
+                              Quantity
+                            </p>
+                            <p style="color: #9a9a9a">1200</p>
+                            <p style="font-weight: 700">-</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold">
+                        4. Point of origin of forest produce
+                        <span style="font-weight: 400"
+                          >(forest block, farm - be specific)</span
+                        >
+                      </p>
+                      <p style="color: #9a9a9a">MAU MAU FOREST</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding: 8px 0 11px 8px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: 700">
+                        5. Vehicle Registration Number
+                      </p>
+                      <p style="color: #9a9a9a">KAA - 000 A</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="34%"
+                      align="left"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p style="font-weight: 700">6. Date of transportation</p>
+                      <p style="color: #9a9a9a">START - DD/MM/YYYY</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr
+                    style="
+                      border-top: 1px solid #000;
+                      border-bottom: 1px solid #000;
+                    "
+                  >
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: 700">6. Date of transportation</p>
+                      <p style="color: #9a9a9a">START - DD/MM/YYYY</p>
+                    </td>
+
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p style="font-weight: 700">
+                        7. Certificate of Origin Reference No.
+                      </p>
+                      <p style="color: #9a9a9a">123456789</p>
+                    </td>
+
+                    <td
+                      valign="top"
+                      width="34%"
+                      align="left"
+                      style="
+                        padding: 8px 0 11px 8px;
+                        border-left: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: 700">
+                        8. Official Receipt Number(s)
+                        <span style="font-weight: 400"
+                          >(applicable to forest produce from forest
+                          reserve)</span
+                        >
+                      </p>
+                      <p style="color: #9a9a9a">RCPT - 123456789</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr
+                    style="
+                      border-top: 1px solid #000;
+                      border-bottom: 1px solid #000;
+                    "
+                  >
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold">
+                        9. Name of issuing Forest Officer
+                      </p>
+                      <p style="color: #9a9a9a">RCPT - 123456789</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding: 8px 0 11px 8px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: 700">
+                        10. Designation of issuing Forest Officer
+                      </p>
+                      <p style="color: #9a9a9a">DIRECTOR</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="34%"
+                      align="left"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p style="font-weight: 700">
+                        11. Signature of issuing Forest Officer
+                      </p>
+                      <p style="color: #9a9a9a">-</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tr
+                    style="
+                      border-top: 1px solid #000;
+                      border-bottom: 1px solid #000;
+                    "
+                  >
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding-top: 8px;
+                        padding-bottom: 11px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold">
+                        12. Name of Officer supervising removal
+                      </p>
+                      <p style="color: #9a9a9a">JOHN DOE</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="33%"
+                      align="left"
+                      style="
+                        padding: 8px 0 11px 8px;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: 700">
+                        13. Signature of supervision officer.
+                      </p>
+                      <p style="color: #9a9a9a">SIGNATURE</p>
+                    </td>
+                    <td
+                      valign="top"
+                      width="34%"
+                      align="left"
+                      style="padding: 8px 0 11px 8px"
+                    >
+                      <p style="font-weight: 700">6. Date of transportation</p>
+                      <p style="color: #9a9a9a">START - DD/MM/YYYY</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- /End Form -->
+
+      <tr>
+        <td style="width: 100%">
+          <p style="font-style: italic">
+            This permit has been issued without any alteration whatsoever.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="width: 100%">
+          <p style="font-style: italic">
+            DISTRIBUTION; <br />Original - To applicant. <br />Duplicate - To be
+            returned to Issuing Officer after endorsement by Officer supervising
+            removal
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
